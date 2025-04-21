@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 3b20506537876a847988f317ba28ad59
+guid: 877aa446689b5cc48925a186934c2072
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2123404033951258097
-    second: hasigo_0
+      213: 3487709220013665677
+    second: tyPur4gts3Ub5Nk1745213512_1745213514_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: hasigo_0
+      name: tyPur4gts3Ub5Nk1745213512_1745213514_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 255
-        height: 340
+        x: 221
+        y: 142
+        width: 585
+        height: 715
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f0a24b908472882e0800000000000000
-      internalID: -2123404033951258097
+      spriteID: d8de4c29e05d66030800000000000000
+      internalID: 3487709220013665677
       vertices: []
       indices: 
       edges: []
@@ -147,8 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      hasigo_0: -2123404033951258097
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
