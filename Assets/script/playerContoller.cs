@@ -1,4 +1,6 @@
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 [RequireComponent(typeof(Rigidbody))]
 public class PlayerController : MonoBehaviour
@@ -8,6 +10,7 @@ public class PlayerController : MonoBehaviour
     public LayerMask groundLayer;
     public Transform groundCheck;
     public float groundCheckRadius = 0.2f;
+    public float player;
 
     private Rigidbody rb;
     private bool isGrounded;
@@ -21,6 +24,7 @@ public class PlayerController : MonoBehaviour
     {
         Move();
         Jump();
+        
     }
 
     void Move()
@@ -52,5 +56,7 @@ public class PlayerController : MonoBehaviour
             rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
         }
     }
+    
+    
 }
 

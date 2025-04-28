@@ -1,15 +1,26 @@
 using UnityEngine;
 
-public class MoveGraund : MonoBehaviour
+public class MovingPlatformTrigger : MonoBehaviour
 {
-    private Vector3 StagePos;
+    public Transform platform;          // 動く床
+    public Transform targetPosition;    // 目的地（床が移動する場所）
+    public float speed = 2f;
 
-    private void Start()
+    private bool shouldMove = false;
+
+    private void OnTriggerEnter(Collider other)
     {
-        StagePos = transform.position;
+        if (other.CompareTag("Player"))
+        {
+            shouldMove = true;
+        }
     }
+
     void Update()
     {
-        transform.position = new Vector3(Mathf.Sin(Time.time) * 2.0f + StagePos.x, StagePos.y, StagePos.z);
+        if (shouldMove && platform != null && targetPosition != null)
+        {
+            platform.position = Vector3.MoveTowards(platform.position, targetPosition.position, speed * Time.deltaTime);
+        }
     }
 }
