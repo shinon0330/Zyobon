@@ -755,11 +755,11 @@ Transform:
   m_GameObject: {fileID: 1220029969}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.9, y: 0, z: 0}
-  m_LocalScale: {x: 0.1, y: 0.1, z: 1}
+  m_LocalPosition: {x: 64.4, y: 20.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1055797287}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1220029971
 BoxCollider:
@@ -1157,6 +1157,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1184289949715500751, guid: 7967c122c99b2c240a43b45135c24072, type: 3}
       insertIndex: -1
       addedObject: {fileID: 76510889}
+    - targetCorrespondingSourceObject: {fileID: 1184289949715500751, guid: 7967c122c99b2c240a43b45135c24072, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1220029970}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 8412050552240785200, guid: 7967c122c99b2c240a43b45135c24072, type: 3}
       insertIndex: -1
@@ -1309,11 +1312,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2080290480862655509, guid: f3bc483be0589fb409433fec57e56d82, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.73
+      value: 5.03
       objectReference: {fileID: 0}
     - target: {fileID: 2080290480862655509, guid: f3bc483be0589fb409433fec57e56d82, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.86
+      value: -1.8
       objectReference: {fileID: 0}
     - target: {fileID: 2080290480862655509, guid: f3bc483be0589fb409433fec57e56d82, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1490,6 +1493,5 @@ SceneRoots:
   - {fileID: 8650254469874799374}
   - {fileID: 1378874796465820254}
   - {fileID: 1220720891016684215}
-  - {fileID: 1220029970}
   - {fileID: 5293252067646430436}
   - {fileID: 7548701375359062637}
