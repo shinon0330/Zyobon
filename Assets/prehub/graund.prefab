@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4887494329816070023}
   - component: {fileID: 3211465449801365524}
+  - component: {fileID: 9198116919387094066}
   m_Layer: 0
   m_Name: graund
   m_TagString: Untagged
@@ -88,6 +89,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &9198116919387094066
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3955853407121388757}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &7108584098678767695
 GameObject:
   m_ObjectHideFlags: 0
@@ -114,7 +136,7 @@ Transform:
   m_GameObject: {fileID: 7108584098678767695}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.7774, y: -0.116, z: 0}
+  m_LocalPosition: {x: 4.82, y: -0.19, z: 0}
   m_LocalScale: {x: 1.2758442, y: 1.0397704, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
