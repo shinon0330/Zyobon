@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class TitleManager : MonoBehaviour
+public class TitleleaveManager : MonoBehaviour
 {
     [SerializeField] private Text PushEnter;
     [SerializeField] private float blinkingInterval = 0.5f;
@@ -24,13 +24,13 @@ public class TitleManager : MonoBehaviour
     private void Update()
     {
         {
-            if(Input.GetKeyDown(KeyCode.Return))
+            if (Input.GetKeyDown(KeyCode.Space))
             {
                 FadeController.Instance.FadeOut(
                     1.5f,
                     () =>
                     {
-                        SceneManager.LoadScene("GameClear");
+                        SceneManager.LoadScene("TitleScene");
                     }
                 );
             }
@@ -39,7 +39,7 @@ public class TitleManager : MonoBehaviour
 
     private IEnumerator blinkingCoroutine()
     {
-        while(true)
+        while (true)
         {
             yield return new WaitForSeconds(blinkingInterval);
             PushEnter.enabled = !PushEnter.enabled;
