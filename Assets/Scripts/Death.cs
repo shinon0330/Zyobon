@@ -7,7 +7,7 @@ public class Death : MonoBehaviour
     public string targetTag = "Enemy";
     public float resetDelay = 2f;
 
-    int life = 3;
+    
 
     void OnCollisionEnter(Collision collision)
     {
@@ -16,8 +16,7 @@ public class Death : MonoBehaviour
         {
             // 死ぬ処理（例えば、ゲームオーバー）
             Die();
-            life = life - 1;
-
+            
         }
     }
 
@@ -31,21 +30,9 @@ public class Death : MonoBehaviour
 
         // 例: ゲームオーバー画面を表示するなどの処理も追加できます
 
-        if (life == 0)
-        {
+        
             SceneManager.LoadScene("GameOverScene");
-        }
-        else
-        {
-            // シーンをリセットする処理
-            Invoke("ResetScene", resetDelay);  // 指定した遅延後にResetSceneメソッドを呼び出す
-            void ResetScene()
-            {
-                
-                SceneManager.LoadScene(SceneManager.GetActiveScene().name);// 現在のシーンを再読み込み
-
-            }
-        }
+        
 
     }
 }
