@@ -27,6 +27,7 @@ public class Drop : MonoBehaviour
         if (dx < triggerDistanceXZ && dz < triggerDistanceXZ && playerPos.y < pos.y)
         {
             rb.isKinematic = false;  // —Ž‰º‚³‚¹‚é
+            Destroy(gameObject, 2f);
             hasDropped = true;
         }
     }
